@@ -222,7 +222,7 @@ def get_reply(message: discord.message.Message) -> str:
             "So if you are new to a raid and need lots of items, you will primarily grab things outside of your soft res list and get tons of gear based on your EP/GP ratio.  Yay!",
             "If you have a few items left, soft reserve what you want.  If it drops, the following decision tree will be followed:",
             "",
-            "1. Look for players who soft reserved the item, go to step 5",
+            "1. Look for players who soft reserved the item, if no one did SR, go to step 5",
             "2. Filter them down based on raid loot priority.  Group A has prio over B over C.",
             "3. For everyone left, weight EP/GP ratio by soft reserve.  Double res has a 1.3 multiplier.  First res is a 1.0 multiplier.  Second res is a 0.7 multiplier.",
             "4. Highest EP/GP * soft_res_multiplier wins.  They pay GP and get the item",
